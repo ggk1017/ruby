@@ -1,10 +1,10 @@
 puts "Would you like to make a mortgage calculation today? (y)es or (n)o?"
 answer = gets.chomp
 
-while answer == "y"
+while answer != "n"
 	puts "please enter your principal amount"
 	p = gets.to_f
-	puts "please enter your term amount (in months)"
+	puts "please enter your term amount (in years)"
 	m = gets.to_i
 	puts "please enter your interest rate (ex '0.075)"
 	r = gets.to_f
