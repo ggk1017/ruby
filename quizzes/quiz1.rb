@@ -1,4 +1,4 @@
-#quiz1
+require 'pry'
 
 puts "what is your name?"
 name = gets
@@ -21,3 +21,4 @@ f = (a * b) #forgot the code for square root. math.sqrt?
 
 puts "Sally, your results are: D= #{d}, E= #{e}, F=#{f}."
 
+binding.pry
