@@ -11,3 +11,8 @@ class Play
 	end
 
 end
+
+puts "#{Play.run}"
+
+p = Play.new
+puts "#{p.walk}"
