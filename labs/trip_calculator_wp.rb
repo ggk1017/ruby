@@ -25,11 +25,11 @@ puts "how much money do you have?"
 total_money = gets.to_f
 
 
-if(cost_of_trip >= total_money)
+if cost_of_trip > total_money)
 	puts "Sorry, you do not have enough money for the trip."
 
 else
-	puts "You will have $#{money_remaining.round(2)} when you arrive in #{hours_of_trip} hours"
+	puts "You will have $#{results[0]} when you arrive in #{results[1]} hours"
 
 end
 

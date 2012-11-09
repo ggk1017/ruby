@@ -1,0 +1,45 @@
+require 'pry'
+
+load 'person.rb'
+load 'animal.rb'
+load 'farm.rb'
+
+puts "Do you want to add a (p)erson (a)nimal (f)arm or (q)uit?"
+response = gets.chomp
+
+farms [] #array should be plural of class
+people []
+
+while response != "q"
+	case response #us the case/when when there are more than 2 options...
+	when 'f'
+		puts "name?"
+		name = gets.chomp
+
+		farm = Farm.new(name)
+		farms << farm
+
+	when 'p'
+		puts "name?"
+		name = gets.chomp
+		puts "age?"
+		age = gets.chomp
+		puts "gender?"
+		gender = gets.chomp
+
+		person = Person.new(name, age, gender) #created a person. n, a, g needs to be in the same order as on the attr_accessor
+		puts "what farm would you like?"
+		binding.pry
+		farm_name = gets,chomp
+
+	when 'a'
+		puts "name?"
+		name = gets.chomp
+		puts "species?"
+		species = gets.chomp
+		puts "gender?"
+		gender = gets.chomp
+
+		animal = Animal.new(name, species, gender)
+	end
+end		
